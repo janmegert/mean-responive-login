@@ -1,0 +1,91 @@
+
+.j-page{
+    position: relative;
+    top: 0;
+    left: 0;
+    color:black;
+}
+
+.j-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(3px);
+    background: linear-gradient(to bottom, #ada397 60%, grey);
+}
+
+.j-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 100vw;
+}
+
+.j-body{
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    height: 60vh;
+    width: 34vw;
+    margin-left:33vw;
+    margin-right:33vw; 
+    background: white;
+    border-radius: 5px;
+}
+
+.j-footer{
+    position: absolute;
+    top: 80vh;
+    left: 0;
+    height: 20vh;
+    width: 100vw;
+}
+
+.j-footer > .footer-style{
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+.j-form > .username, .password, .button{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.j-form> .username{
+    margin-top: 5vh;
+}
+
+.j-form> .password{
+    margin-top: 2vh;
+}
+
+.j-button {
+    margin-top:  8vh;
+    width: 100% !important;
+    height: 6vh;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: blue;
+    color: white;
+}
+
+.j-button-signup{
+    margin-top: 2vh;
+}
+
+
+@media screen and (max-width: 700px) {
+    .j-body{
+        width: 90vw;
+        margin-left:5vw;
+        margin-right:5vw; 
+    }
+}
