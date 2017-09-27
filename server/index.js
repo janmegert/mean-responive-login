@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://55.55.55.5/mongo');
+mongoose.connect('mongodb://localhost/credentials');
 mongoose.model('user', {username: String});
 
 app.use(bodyParser.json());
