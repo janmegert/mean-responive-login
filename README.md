@@ -14,10 +14,8 @@
 
 ## Frontend
 #### On Desktop
-<img src="./imgs/rwd-desktop.png" width="633" height="354">
+<img src="./imgs/rwd-desktop.png" width="633" height="354" />
 #### On Mobile Screen
-<img src="./imgs/rwd-mobile.png" width="377" height="669">
+<img src="./imgs/rwd-mobile.png" width="190" height="335" />
 
-
-
-## More details will come up soon.
+## More details will come up as the project progresses
