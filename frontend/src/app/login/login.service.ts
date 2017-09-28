@@ -20,7 +20,7 @@ export class LoginService {
     }
 
     verifyCredentials(postBody):Observable<Response>{
-        let postUrl= 'http://localhost:3000/backend';
+        let postUrl= 'http://localhost:3000/signin';
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
         return this.http.post(postUrl, postBody, options)

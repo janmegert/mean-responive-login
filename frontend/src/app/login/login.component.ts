@@ -14,6 +14,18 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  signinSuccess(){
+    // add UI when user sign in successfully 
+  }
+
+  signinFailed(){
+    // add UI that shows password is wrong
+  }
+
+  requireSignup(){
+    // add UI that shows signup is required
+  }
+
   verifyCredentials(username: String , password: String){
     if(username.length == 0 || password.length ==0){
       console.log('enter credentials');  
