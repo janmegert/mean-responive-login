@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'MEAN login web app' });
+  res.send({"authentication": "success"});
 });
 
 module.exports = router;

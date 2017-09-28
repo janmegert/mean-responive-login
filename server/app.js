@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var server = require('./routes/server');
 
 var app = express();
 
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/server', server);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -49,18 +51,6 @@ app.use(function(req, res, next){
     next();
 })
  
-app.get('/test', function(req, res){
-    console.log(req.body)
-    res.send('success!');
-});
 
-app.post('/backend', function(req, res){
-    console.log(req.body);
-    res.send({"authentication": "success"});
-});
-
-app.listen(3000, function(){
-    console.log('server is up');
-});
 
 module.exports = app;
