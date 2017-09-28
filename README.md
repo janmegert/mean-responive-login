@@ -12,7 +12,7 @@
   1. Integration Test using Protractor
   1. Instruction
 
-## Frontend
+## Responsive Frontend
 #### On Desktop
 <img src="./imgs/rwd-desktop.png" width="633" height="354" />
 
