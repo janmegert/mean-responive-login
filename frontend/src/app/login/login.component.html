@@ -1,6 +1,9 @@
 <div class="j-page">
   <div class="j-header"></div>
   <div class="j-bg"></div>
+  <div *ngIf="alertFlag" class="j-alert alert alert-danger" role="alert">
+    <p style="text-align: center">{{alertMessage}}</p>
+  </div>
   <div class="j-body">
     <div class="j-form form-group">
       <div class="username">

@@ -25,6 +25,17 @@
     width: 100vw;
 }
 
+.j-alert{
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    height: 10vh;
+    width: 34vw;
+    margin-left:33vw;
+    margin-right:33vw; 
+    overflow: auto;
+}
+
 .j-body{
     position: absolute;
     top: 20vh;
@@ -85,6 +96,12 @@
 
 @media screen and (max-width: 700px) {
     .j-body{
+        width: 90vw;
+        margin-left:5vw;
+        margin-right:5vw; 
+    }
+
+    .j-alert{
         width: 90vw;
         margin-left:5vw;
         margin-right:5vw; 
