@@ -1,5 +1,5 @@
-# MEAN Responsive Login Web App(Building Process)
-## A demostration of a web app built by mean stack (MongoDB ExpressJS Angular4 NodeJS). 
+# MEAN Responsive Login Web App (In Progress)
+**A demostration of a web app built by mean stack (MongoDB ExpressJS Angular4 NodeJS).**
 
 ## RoadMap:
   1. ~~Complete Responsive Angular4 login frontend~~
