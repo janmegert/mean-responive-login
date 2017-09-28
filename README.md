@@ -4,14 +4,14 @@
 ## RoadMap:
   1. ~~Complete Responsive Angular4 login frontend~~
   1. ~~Add REST request components~~
-  1. Connect Nodejs server with mongoDB hosted on Atlas
+  1. Connect Nodejs server with mongoDB that's being hosted on Atlas
   1. Deploy NodeJS server to Heroku
   1. Deploy Angular web app to Nodejs Server
-  1. Unit testing on Angular frontend
-  1. Unit testing on Nodejs server
-  1. Integration Test
+  1. Unit testing on Angular frontend using Karma-Jasmine
+  1. Unit testing on Nodejs server using Mocha, Chai and Sinon
+  1. Integration Test using Protractor
   1. Instruction
-  
+
 ## Frontend
 #### On Desktop
 <img src="./imgs/rwd-desktop.png" width="633" height="354">
