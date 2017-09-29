@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
   signinFailure(){
     // add UI that shows password is wrong
     this.alertFlag = true;
-    this.alertMessage = 'wrong user credential';
+    this.alertMessage = 'wrong password';
   }
 
   requireSignup(){

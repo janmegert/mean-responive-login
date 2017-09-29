@@ -83,13 +83,13 @@
     height: 6vh;
     border-radius: 5px;
     border: 1px solid transparent;
-    background-color: blue;
+    background-color: #86A2A5;
     color: white;
 }
 
 .j-button-signup{
     margin-top: 4vh;
-    background-color: red;
+    background-color: #EACEAF;
 }
 
 
