@@ -20,11 +20,11 @@ This web app is used as a example of how a login web app can be build using MEAN
   - [ ] 9. Integration Test using Protractor
 
 ## Main Frameworks, Dependencies and Dev Tools:
-* Frontend: Angular4 in Typescript, HTML, CSS3, Bootstrap and Fontawesome
-* Server: NodeJS, ExpressJs and Mongoose
-* Database: MongoDB
-* Deployment: Firebase, Heroku, Atlas
-* Dev Tools: Postman, Nodemon, Google Chrome Toolbar
+* **Frontend:** Angular4 in Typescript, HTML, CSS3, Bootstrap and Fontawesome
+* **Server:** NodeJS, ExpressJs and Mongoose
+* **Database:** MongoDB
+* **Deployment:** Firebase, Heroku, Atlas
+* **Dev Tools:** Postman, Nodemon, Google Chrome Toolbar
 
 ## Responsive Frontend:
 #### On Desktop
