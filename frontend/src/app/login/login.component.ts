@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
   signinSuccess(){
     // add UI when user sign in successfully 
     this.alertFlag = true;
-    this.alertMessage = 'sign in success';
+    this.alertMessage = 'signed in successfully';
   }
 
   signinFailure(){
@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
   requireSignup(){
     // add UI that shows signup is required
     this.alertFlag = true;
-    this.alertMessage = 'signup required';
+    this.alertMessage = 'unregistered username, please sign up';
   }
 
   loadingEx(){

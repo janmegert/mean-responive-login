@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit {
   signupSuccess(){
     // add UI that shows the success of signingup
     this.alertFlag = true;
-    this.alertMessage = 'sign up succeeds';
+    this.alertMessage = 'you\'ve signed up successfully';
   }
 
   signupFailure(){
@@ -37,7 +37,7 @@ export class SignupComponent implements OnInit {
   infoRequired(){
     // add UI that warns user to fill out all the information
     this.alertFlag = true;
-    this.alertMessage = 'fill out all blanks';
+    this.alertMessage = 'all listed information are required';
   }
 
   internalError(){

@@ -3,10 +3,12 @@
 **A demostration of a web app built by mean stack (MongoDB ExpressJS Angular4 NodeJS).**
 <br/><br/>**[Login web app link](https://jay-shi-mean-login.firebaseapp.com "login web app")** 
 
-## Instruction Video:
+## Demo Video:
+
+[![Login Web App Demo](https://img.youtube.com/vi/f74OIacMsdA/0.jpg)](https://www.youtube.com/watch?v=f74OIacMsdA)
 
 ## Use:
-This web app is used as a example of how a login web app can be build using MEAN stack. User can sign up a new account and the account data will be stored in online hosted database. Then user can log in the web app using the account they just signed up.
+This web app is used as a example to show how a login web app can be build using MEAN stack. User can sign up a new account and the account data will be stored in database hosted online. Then users can log in the web app using the account they just signed up.
 
 ## RoadMap:
   - [x] 1. Build Responsive Angular4 login frontend
@@ -24,7 +26,7 @@ This web app is used as a example of how a login web app can be build using MEAN
 * **Server:** NodeJS, ExpressJs and Mongoose
 * **Database:** MongoDB
 * **Deployment:** Firebase, Heroku, Atlas
-* **Dev Tools:** Postman, Nodemon, Google Chrome Toolbar
+* **Dev Tools:** Aangular-CLI, Express-generator, Postman, Nodemon, Google Chrome Toolbar
 
 ## Responsive Frontend:
 #### On Desktop
