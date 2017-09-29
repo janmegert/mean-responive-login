@@ -1,7 +1,7 @@
 # MEAN Responsive Login Web App (Testing Stage)
 
 **A demostration of a web app built by mean stack (MongoDB ExpressJS Angular4 NodeJS).**
-**Login web app firebase link: [https://jay-shi-mean-login.firebaseapp.com "login web app"]** 
+**[Login web app link](https://jay-shi-mean-login.firebaseapp.com "login web app")** 
 
 ## Instruction Video
 
