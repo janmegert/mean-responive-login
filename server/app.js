@@ -6,10 +6,9 @@ var express = require('express'),
     global.__basedir = __dirname; // define project root path
 
 // define path
-var index = require('./routes/index'),
-    backend = require('./routes/backend'),
-    signin = require('./routes/signin'),
-    signup = require('./routes/signup');
+var index = require(__dirname+'/routes/index'),
+    signin = require(__dirname+'/routes/signin'),
+    signup = require(__dirname+'/routes/signup');
 
 var app = express();
 
@@ -33,7 +32,6 @@ app.use(function(req, res, next){
 });
 
 app.use('/', index);
-app.use('/backend', backend);
 app.use('/signin', signin);
 app.use('/signup', signup);
 

@@ -1,6 +1,6 @@
 var express = require('express'),
     router = express.Router(),
-    signinService = require('../services/signinService');
+    signinService = require(global.__basedir+'/services/signinService');
 
 /* GET home page. */
 router.post('/', async function(req, res, next) {

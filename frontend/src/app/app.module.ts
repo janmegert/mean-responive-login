@@ -7,18 +7,21 @@ import { LoginComponent } from './login/login.component';
 import { RoutingModule} from './routing.module';
 import { LocationStrategy, HashLocationStrategy} from '@angular/common';
 import { LoginService} from './login/login.service';
+import { SignupService} from './signup/signup.service';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     RoutingModule,
     HttpModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, LoginService],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, LoginService, SignupService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

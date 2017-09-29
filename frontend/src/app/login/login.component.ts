@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService} from './login.service';
-
+import { Router} from '@angular/router';
 @Component({
   selector: 'login-component',
   templateUrl: './login.component.html',
@@ -8,7 +8,7 @@ import { LoginService} from './login.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor( private loginService: LoginService) { 
+  constructor( private loginService: LoginService, private router: Router) { 
   }
 
   ngOnInit() {
@@ -16,6 +16,8 @@ export class LoginComponent implements OnInit {
 
   alertMessage: String;
   alertFlag = false;
+  buttonEffectsFlag = false;
+  disableButton = true;
 
   enterCredential(){
     this.alertFlag = true;
@@ -28,7 +30,7 @@ export class LoginComponent implements OnInit {
     this.alertMessage = 'sign in success';
   }
 
-  signinFailed(){
+  signinFailure(){
     // add UI that shows password is wrong
     this.alertFlag = true;
     this.alertMessage = 'wrong user credential';
@@ -38,6 +40,11 @@ export class LoginComponent implements OnInit {
     // add UI that shows signup is required
     this.alertFlag = true;
     this.alertMessage = 'signup required';
+  }
+
+  loadingEx(){
+    // add UI that shows the effects of loading
+    this.buttonEffectsFlag = true;
   }
 
   // helper
@@ -52,22 +59,26 @@ export class LoginComponent implements OnInit {
       return;
     }
     if(!response.isValid){
-      this.signinFailed();
+      this.signinFailure();
       return;
     }
   }
 
-  verifyCredentials(username: String , password: String){
+  redirectToSignup(){
+    this.router.navigate(['/signup']);
+    return;
+  }
 
+  verifyCredentials(username: String , password: String){
     if(username.length == 0 || password.length ==0){
       console.log('enter credentials');  
-      // add UI that shows credential needs to be entered
       this.enterCredential();
       return;
     }
+    this.buttonEffectsFlag = true;
     this.loginService.verifyCredentials({"username": username, "password": password})
                       .subscribe(response => this.checkDbResponse(response),
-                                  error => {},
-                                  ()=>{} );
+                                  error => { this.buttonEffectsFlag = false },
+                                  () => this.buttonEffectsFlag = false );
   }
 }

@@ -7,24 +7,28 @@
   <div class="j-body">
     <div class="j-form form-group">
       <div class="username">
-        <label>USERNAME</label>
+        <label>Username</label>
         <input  class="form-control" type="text" placeholder="Enter username" #username>
       </div>
       <div class="password"> 
-        <label>PASSWORD</label>
+        <label>Password</label>
         <input class="form-control" type="password" #password>
       </div>
+      <div class="email"> 
+        <label>Email</label>
+        <input class="form-control" type="email" #email>
+      </div>
       <div class="button">
-        <button class="j-button" *ngIf="!buttonEffectsFlag" (click)="verifyCredentials(username.value, password.value)">Sign in</button>
-        <button class="j-button" *ngIf="buttonEffectsFlag" [disabled]="disableButton">
+        <button class="j-button j-button-signup" *ngIf="!buttonEffectsFlag" (click)="signupAccount(username.value, password.value, email.value)">Sign up</button>
+        <button class="j-button j-button-signup" *ngIf="buttonEffectsFlag" [disabled]="disableButton">
           <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
           <span class="sr-only">Loading...</span>
         </button>
-        <button class="j-button j-button-signup" (click)="redirectToSignup()">Sign up</button>
+        <button class="j-button j-button-back" (click)="redirectToLogin()">Back to sign in</button>
       </div>
     </div>
   </div>
   <div class="j-footer">
-    <a class="footer-style" href= "#">Forget password?</a>
+    <a class="footer-style" href= "#"></a>
   </div>
 </div>
