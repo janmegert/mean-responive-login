@@ -2,16 +2,16 @@
 **A demostration of a web app built by mean stack (MongoDB ExpressJS Angular4 NodeJS).**
 
 ## RoadMap:
-  1. ~~Complete Responsive Angular4 login frontend~~
-  1. ~~Add REST request components~~
-  1. ~~Connect Nodejs server with mongoDB that's being hosted on Atlas~~
-  1. ~~Deploy NodeJS server to Heroku~~
-  1. ~~Deploy Angular web app to Firebase~~
-  1. Add authentication function to the server
-  1. Unit testing on Angular frontend using Karma-Jasmine
-  1. Unit testing on Nodejs server using Mocha, Chai and Sinon
-  1. Integration Test using Protractor
-  1. Instruction
+  - [x] 1. Complete Responsive Angular4 login frontend~~
+  - [x] 2. Add REST request components~~
+  - [x] 3. Connect Nodejs server with mongoDB that's being hosted on Atlas~~
+  - [x] 4. Deploy NodeJS server to Heroku~~
+  - [x] 5. Deploy Angular web app to Firebase~~
+  - [ ] 6. Add authentication function to the server
+  - [ ] 7. Unit testing on Angular frontend using Karma-Jasmine
+  - [ ] 8. Unit testing on Nodejs server using Mocha, Chai and Sinon
+  - [ ] 9. Integration Test using Protractor
+  - [ ] 10. Instruction
 
 ## Responsive Frontend
 #### On Desktop
