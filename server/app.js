@@ -6,9 +6,9 @@ var express = require('express'),
     global.__basedir = __dirname; // define project root path
 
 // define path
-var index = require(__dirname+'/routes/index'),
-    signin = require(__dirname+'/routes/signin'),
-    signup = require(__dirname+'/routes/signup');
+var index = require('./routes/main'),
+    signin = require('./routes/signin'),
+    signup = require('./routes/signup');
 
 var app = express();
 
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// CORS
+// allow CORS
 app.use(function(req, res, next){
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");

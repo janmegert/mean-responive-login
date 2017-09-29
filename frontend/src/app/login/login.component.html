@@ -7,12 +7,12 @@
   <div class="j-body">
     <div class="j-form form-group">
       <div class="username">
-        <label>USERNAME</label>
-        <input  class="form-control" type="text" placeholder="Enter username" #username>
+        <label for="username">USERNAME</label>
+        <input  class="form-control" type="text" placeholder="Enter username" id="username" #username>
       </div>
       <div class="password"> 
-        <label>PASSWORD</label>
-        <input class="form-control" type="password" #password>
+        <label for="password">PASSWORD</label>
+        <input class="form-control" type= "password" id="password" #password>
       </div>
       <div class="button">
         <button class="j-button" *ngIf="!buttonEffectsFlag" (click)="verifyCredentials(username.value, password.value)">Sign in</button>

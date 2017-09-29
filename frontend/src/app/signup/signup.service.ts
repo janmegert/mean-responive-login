@@ -20,7 +20,7 @@ export class SignupService {
     }
 
     signupAccount(postBody):Observable<Response>{
-        let postUrl= 'http://localhost:3000/signup';
+        let postUrl= 'https://intense-retreat-16179.herokuapp.com/signup';
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
         return this.http.post(postUrl, postBody, options)
