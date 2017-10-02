@@ -7,6 +7,13 @@
 
 [![Login Web App Demo](https://img.youtube.com/vi/f74OIacMsdA/0.jpg)](https://www.youtube.com/watch?v=f74OIacMsdA)
 
+## Architecture Flow:
+#### Sign in
+<img src="./imgs/signin-architecture.png" width="650" height="350" />
+
+#### Sign up
+<img src="./imgs/signup-architecture.png" width="650" height="350" />
+
 ## Use:
 This web app is used as a example to show how a login web app can be build using MEAN stack. User can sign up a new account and the account data will be stored in database hosted online. Then users can log in the web app using the account they just signed up.
 
@@ -27,6 +34,7 @@ This web app is used as a example to show how a login web app can be build using
 * **Database:** MongoDB
 * **Deployment:** Firebase, Heroku, Atlas
 * **Dev Tools:** Aangular-CLI, Express-generator, Postman, Nodemon, Google Chrome Toolbar
+
 
 ## Responsive Frontend:
 #### On Desktop
