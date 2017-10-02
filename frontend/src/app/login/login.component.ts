@@ -14,42 +14,63 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  // alertMessage is used to store the message to be displayed
   alertMessage: String;
+
+  /*
+   * ngIf-flag is used to control DOM elements
+   * alertFlag control whether the alertmessage should be displayed
+   * buttonEffectsFlag control whether the button effects shoould be displayed
+   */
   alertFlag = false;
   buttonEffectsFlag = false;
+
+  // disableButton is used to control button 'disabled' property
   disableButton = true;
 
+  /* 
+   * helper function that displays message when user did not eneter 
+   * the credentials completely
+   */
   enterCredential(){
     this.alertFlag = true;
     this.alertMessage = 'enter credentials';
   }
 
+  // helper function that displays message when user sign in successfully
   signinSuccess(){
-    // add UI when user sign in successfully 
     this.alertFlag = true;
     this.alertMessage = 'signed in successfully';
   }
 
+  // helper function that displays message when user used the wrong password
   signinFailure(){
-    // add UI that shows password is wrong
     this.alertFlag = true;
     this.alertMessage = 'wrong password';
   }
 
+  // helper function that displays message when user used the unregistered username
   requireSignup(){
-    // add UI that shows signup is required
     this.alertFlag = true;
     this.alertMessage = 'unregistered username, please sign up';
   }
 
+   // helper function that displays loading button effects 
   loadingEx(){
-    // add UI that shows the effects of loading
     this.buttonEffectsFlag = true;
   }
 
-  // helper
+  /* 
+   * data base will return a JSON stating if signin is successful and whether
+   * new account needs to be regiestered.
+   * A helper function is  made to check the JSON response from database
+  */ 
+
+  /**
+   * 
+   * @param response 
+   */
   checkDbResponse(response: any){
-    // add functions that process the response
     if(response.isValid){
       this.signinSuccess();
       return;
@@ -69,6 +90,11 @@ export class LoginComponent implements OnInit {
     return;
   }
 
+  /**
+   * 
+   * @param username 
+   * @param password 
+   */
   verifyCredentials(username: String , password: String){
     if(username.length == 0 || password.length ==0){
       console.log('enter credentials');  
