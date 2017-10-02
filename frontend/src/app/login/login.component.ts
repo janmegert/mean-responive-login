@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   // alertMessage is used to store the message to be displayed
   alertMessage: String;
 
-  /*
+  /** 
    * ngIf-flag is used to control DOM elements
    * alertFlag control whether the alertmessage should be displayed
    * buttonEffectsFlag control whether the button effects shoould be displayed
@@ -28,8 +28,8 @@ export class LoginComponent implements OnInit {
   // disableButton is used to control button 'disabled' property
   disableButton = true;
 
-  /* 
-   * helper function that displays message when user did not eneter 
+  /**
+   * this helper function displays message when user did not eneter 
    * the credentials completely
    */
   enterCredential(){
@@ -37,37 +37,40 @@ export class LoginComponent implements OnInit {
     this.alertMessage = 'enter credentials';
   }
 
-  // helper function that displays message when user sign in successfully
+  /**
+   * this helper function  displays message when user sign in successfully
+   */
   signinSuccess(){
     this.alertFlag = true;
     this.alertMessage = 'signed in successfully';
   }
 
-  // helper function that displays message when user used the wrong password
+  
+  /**
+   * this helper function displays message when user used the wrong password
+   */
   signinFailure(){
     this.alertFlag = true;
     this.alertMessage = 'wrong password';
   }
 
-  // helper function that displays message when user used the unregistered username
+  /**
+   * this helper function displays message when user used the unregistered username
+   */
   requireSignup(){
     this.alertFlag = true;
     this.alertMessage = 'unregistered username, please sign up';
   }
 
-   // helper function that displays loading button effects 
+   /**
+    * this helper function displays loading button effects 
+    */
   loadingEx(){
     this.buttonEffectsFlag = true;
   }
 
-  /* 
-   * data base will return a JSON stating if signin is successful and whether
-   * new account needs to be regiestered.
-   * A helper function is  made to check the JSON response from database
-  */ 
-
   /**
-   * 
+   * this function hanles the JSON response from databse
    * @param response 
    */
   checkDbResponse(response: any){
@@ -91,6 +94,10 @@ export class LoginComponent implements OnInit {
   }
 
   /**
+   * Using data binding, when user click 'sign in' button, the credentials will be passed 
+   * into function verifyCredentials. Then function verifyCredentials will call loginService and 
+   * send a REST request. When the REST requesting succeeds, function checkDbResponse will be 
+   * called to handle the Http response.
    * 
    * @param username 
    * @param password 
