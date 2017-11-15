@@ -19,7 +19,7 @@ export class LoginService {
         return Observable.throw(error.message || error);
     }
 
-    verifyCredentials(postBody):Observable<Response>{
+    verifyCredentials(postBody):Observable<Response> {
         let postUrl= 'https://intense-retreat-16179.herokuapp.com/signin';
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });

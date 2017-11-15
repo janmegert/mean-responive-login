@@ -11,6 +11,9 @@ before_script:
   - npm i -g firebase-tools
   - npm i -g @angular/cli
   - npm i
+
+
+after_success:
   - npm run build
   - firebase deploy --token $FIREBASE_TOKEN --project $FIREBASE_PROJECT
   

@@ -25,7 +25,7 @@ This web app is used as a example to show how a login web app can be build using
   - [x] 3. Host Mongo database on Atlas and connect it to Nodejs Server
   - [x] 4. Deploy NodeJS server to Heroku
   - [x] 5. Deploy Angular web app to Firebase
-  - [ ] 6. Automate builds using Travis CI
+  - [x] 6. Automate builds using Travis CI
   - [ ] 7. Implement password hashing to server
   - [ ] 8. Unit tests on Angular frontend using Karma-Jasmine
   - [ ] 9. Unit tests on Nodejs server using Mocha, Chai and Sinon
