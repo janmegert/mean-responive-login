@@ -10,6 +10,7 @@ before_script:
   - cd frontend
   - npm i -g firebase-tools
   - npm i -g @angular/cli
+  - npm i
   - npm run build
   - firebase deploy --token $FIREBASE_TOKEN --project $FIREBASE_PROJECT
   
